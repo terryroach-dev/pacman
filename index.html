@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Pacman game. By Terry Roach - Web Developer.">
+    <meta name="keywords" content="pacman, game">
+    <meta name="author" content="Terry Roach">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <div class="flex">
+        <div class="info">
+            <h1>Pacman</h1>
+            <h2>Score: <span id="score-text"></span></h2>
+            <h3 id="final-score"></h3>
+            <h3>Instructions</h3>
+            <p>Use the directions buttons on your keyboard to move Pacman and eat the pacdots and power pellets. Avoid the ghosts, if they eat you it's game over, but, if you eat a power pellet you have 10 seconds to eat the ghosts and score more points. Eat all the pacdots and power pellets to win the game!</p>
+            <button id="start-btn">Start Again</button>
+        </div>
+        <div class="grid-div">
+            <div class="grid"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

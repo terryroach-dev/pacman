@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.grid-div {
+    width: 60%;
+}
+.info {
+    text-align: center;
+    width: 35%;
+}
+.info h1 {
+    font-size: 4em;
+}
+.info h2 {
+    font-size: 2em;
+}
+.info h3 {
+    margin-top: 3em;
+}
+.info p {
+    font-size: 1.2em;
+    margin-bottom: 3em;
+}
+.grid {
+    height: 560px;
+    width: 560px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid div {
+    height: 20px;
+    width: 20px;
+}
+
+.wall {
+    background-color: lightseagreen;
+}
+.pac-dot {
+    background-color: orangered;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+.power-pellet {
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+.pacman::before, .pacman::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border: solid 10px yellow;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: mouthTop 0.7s ease infinite;
+}
+.pacman::after {
+    border-color: yellow;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: mouthBottom 0.7s ease infinite;
+}
+.blinky {
+    background-color: red;
+    border: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    position: relative;
+}
+.blinky::before, .blinky::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 7px;
+    width: 4px;
+    border: white 2px solid;
+    border-radius: 100%;
+    top: 3px;
+    left: 3px;
+}
+.blinky::after {
+    left: 12px;
+}
+.pinky {
+    background-color: palevioletred;
+    border: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    position: relative;
+}
+.pinky::before, .pinky::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 7px;
+    width: 4px;
+    border: white 2px solid;
+    border-radius: 100%;
+    top: 3px;
+    left: 3px;
+}
+.pinky::after {
+    left: 12px;
+}
+.inky {
+    background-color: greenyellow;
+    border: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    position: relative;
+}
+.inky::before, .inky::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 7px;
+    width: 4px;
+    border: white 2px solid;
+    border-radius: 100%;
+    top: 3px;
+    left: 3px;
+}
+.inky::after {
+    left: 12px;
+}
+.clyde {
+    background-color: blueviolet;
+    border: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    position: relative;
+}
+.clyde::before, .clyde::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 7px;
+    width: 4px;
+    border: white 2px solid;
+    border-radius: 100%;
+    top: 3px;
+    left: 3px;
+}
+.clyde::after {
+    left: 12px;
+}
+.scared-ghost {
+    animation: scared 0.5s linear infinite;
+}
+
+@keyframes mouthTop {
+    50% {
+        transform: rotate(44deg);
+    }
+}
+@keyframes mouthBottom {
+    50% {
+        transform: rotate(-44deg);
+    }
+}
+@keyframes scared {
+    50% {
+        background-color: darkblue;
+    }
+}
